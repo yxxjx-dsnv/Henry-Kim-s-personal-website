@@ -1,0 +1,628 @@
+:root {
+    --text-color: #3E3E3E;
+    --link-color: #787878;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville';
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#essay-links a {
+    color:#000000
+}
+
+#feature-links a {
+    color:#000000
+}
+
+.main-container {
+    display: flex;              /* Enables Flexbox */
+    justify-content: center;    /* Horizontally centers content */
+    text-align: left;           /* Ensures text inside is left-aligned */
+    min-height: 100vh;          /* Makes container fill the full viewport height */
+    padding: 20px;
+}
+
+.content-wrapper {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* SECTION 1: HERO */
+.hero-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 30px 40px;
+    max-width: 600px;
+}
+
+
+.hero-section .text h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.hero-section .text p1 {
+    margin-top: 50px;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #787878;
+}
+
+/* SECTION 2: ABOUT */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.about-section .text p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-section .text .bio {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+/* SECTION 3: CONTACT */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 600px;
+}
+
+.contact-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-section .text .email-div {
+    font-weight: lighter;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.contact-section .text .email-div p {
+    color: #000000;
+}
+
+.contact-section .text .x-div {
+    font-weight: lighter;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.contact-section .text .x-div p {
+    color: #000000;
+}
+
+.contact-section .text .instagram-div {
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.contact-section .text .instagram-div p {
+    color: #000000;
+}
+
+a {
+    color: #868686; /* Change link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #000000; /* Change color on hover */
+}
+
+
+/* SECTION 4: ESSAYS */
+.essay-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.essay-section .text .title p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.essay-section .text .startup-learnings-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+.essay-section .text .startup-learnings-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.essay-section .text .sirtuins-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.essay-section .text .sirtuins-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+/* SECTION 5: WORK EXPERIENCE */
+.work-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.work-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.work-section .text .rx-assist-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.work-section .text .rx-assist-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.work-section .text .medme-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+.work-section .text .medme-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.work-section .text .med-tech-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.work-section .text .med-tech-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.work-section .text .novartis-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.work-section .text .novartis-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.work-section .text .refoundation-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.work-section .text .refoundation-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.work-section .text .sdm-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.work-section .text .sdm-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+
+/* SECTION 6: EDUCATION */
+.education-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.education-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.education-section .text .minerva-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+.education-section .text .minerva-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+/* SECTION 7: FEATURES */
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.features-section .text .title p {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.features-section .text .chn-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+.features-section .text .chn-div2 p {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+/* SECTION 8: SIDE PROJECTS */
+.projects-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.projects-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.projects-section .text .antibiotics-div {
+    margin-top: 15px;
+}
+
+.projects-section .text .antibiotics-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.projects-section .text .antibiotics-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+
+.projects-section .text .shell-div {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.projects-section .text .shell-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.projects-section .text .shell-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.projects-section .text .marathon-div {
+    margin-left: 15px;
+}
+
+.projects-section .text .marathon-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.projects-section .text .marathon-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+
+/* SECTION 9: FILM PROJECTS */
+.film-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.film-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.film-section .text .teen-troubles-div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.film-section .text .teen-troubles-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.film-section .text .teen-troubles-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.film-section .text .teen-troubles-div img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.film-section .text .water-div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.film-section .text .water-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.film-section .text .water-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.film-section .text .water-div img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.film-section .text .wonder-div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.film-section .text .wonder-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.film-section .text .wonder-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.film-section .text .wonder-div img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.film-section .text .ghost-div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.film-section .text .ghost-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.film-section .text .ghost-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.film-section .text .ghost-div img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.film-section .text .lies-div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.film-section .text .lies-div p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+.film-section .text .lies-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+}
+.film-section .text .lies-div img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+/* SECTION 10: READING LOG */
+.reading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.reading-section .text .title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.reading-section .text .CM-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+}
+.reading-section .text .CM-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.reading-section .text .TLOHN-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.reading-section .text .TLOHN-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.reading-section .text .guns-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.reading-section .text .guns-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.reading-section .text .courage-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.reading-section .text .courage-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+.reading-section .text .lifespan-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.reading-section .text .lifespan-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+.reading-section .text .no-human-div p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.reading-section .text .no-human-div p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
+    margin-left: 15px;
+}
+
+.essay-section .text p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.other-links-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.other-links-section .text .title p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+}
+
+.other-links-section .text .links a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-weight: lighter;
+}
+
+.other-links-section .text .links a:hover {
+    color: #2F4858;
+}
