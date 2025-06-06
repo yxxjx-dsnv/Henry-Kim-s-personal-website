@@ -27,21 +27,13 @@
             opacity: 1;
         }
 
-        /*.dark-mode {
+        /*.section-title {
             cursor: pointer;
         } */
     </style>
-
 </head>
 
 <body>
-
-    <script>
-        function togglePopup(id) {
-            const element = document.getElementById(id);
-            element.classList.toggle("show");
-        }
-    </script>
 
     <main>
         <div class="main-container">
@@ -51,9 +43,9 @@
                 <img src="H Logo.svg" alt="Logo" id="logo-toggle" class="logo">
                 <p>Navigation</p><br>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="henry_essays.html">Essays</a></li>
-                    <li><a href="henry_ec.html">Extra-Curricular</a></li><br>
+                    <li><a href="henry_ec.html" class="active">Extra-Curricular</a></li><br>
                 </ul>
 
                 <p>Find me on</p><br>
@@ -64,52 +56,51 @@
                     <li><a href="mailto:mail2yjkim@gmail.com">Email</a></li>
                 </ul>
             </nav>
-
-            <!-- Home -->
+        
+        
             <div class="content-wrapper">
-
-                <!--SECTION: HERO-->
+                <!--SECTION 1: HERO-->
                 <section class="hero-section">
                     <div class="text">
-                        <h1>Henry Kim</h1>
-                        <p1>last updated: 2025/06/03</p1>
+                        <h1>Learnings from past three years</h1>
+                        <p1>written: 2025/01/02</p1>
                     </div>
                 </section>
-
-                <!--SECTION: ABOUT-->
-                <section class="about-section">
+        
+                <!--SECTION 4: EXTRA-CURRICULAR-->
+                <section class="extra-curricular-section">
                     <div class="text">
-                        <p>Some things about me:</p>
-                        <div class="section-title">
-                            <li>17-years-old, born in S. Korea — incoming Engineering Science student at the University of Toronto.</li><br>
-                            <li>Currently working on a startup called <a href="https://mono.com" target="_blank">MONO</a> as the Founder & CEO.</li><br>
-                            <li>Previously worked as a Project Leader at WGSS Grad Council 2025, President at WGSS LEO Club, and Co-President at Unity 4 Charity (U4C).</li><br>
-                            <li>Passionate about creating beautiful things for the world at scale, with a focus on startups as the art form of capitalism.</li><br> 
-                            <li>My personal philosophy is a synthesis of ideas from non-dualism, Kashmir Shaivism, Advaita Vedanta, Buddhism, and Christianity.</li>
-                        </div>   
-                        </p>              
+                        <div class="title">
+                            <p>Extra-Curricular</p>
+                        </div>
+                        <div class="MONO-div">
+                            <p>Founder & CEO at <a href="https://www.instagram.com/wgssgrads25/" target="_blank">MONO</a> (Startup)</p>
+                            <p1>May 2025 - present</p1>
+                        </div>
+                        <div class="GC25-div">
+                            <p>Project Leader at WGSS Grad Council 2025 <a href="https://www.instagram.com/wgssgrads25/" target="_blank">(@wgssgrads25)</a></p>
+                            <p1>May 2024 - present</p1>
+                        </div>
+                        <div class="WGLC-div">
+                            <p>President at WGSS LEO Club <a href="https://www.instagram.com/wgssleos/" target="_blank">(@wgssleos)</a></p>
+                            <p1>Sep 2023 - Present</p1>
+                        </div>
+                        <div class="U4C-div">
+                            <p>Co-President at <a href="https://unity4charity.com" target="_blank">Unity 4 Charity (U4C)</a></p>
+                            <p1>Aug 2023 - Present</p1>
+                        <div class="WGKCC-div">
+                            <p>Vice-President at WGSS Korean Culture Club <a href="https://www.instagram.com/wgsskoreancultureclub/" target="_blank">(@wgsskoreancultureclub)</a></p>
+                            <p1>Jun 2024 - Mar 2025</p1>
+                        </div>
+                        <div class="TACKK-div">
+                            <p>Teaching Assistants (TA) at <a href="https://www.kwanglim.ca/school" target="_blank">Canada Kwanglim Korean School</a></p>
+                            <p1>Aug 2024 - Jan 2025</p1>
+                        </div>
                     </div>
                 </section>
-
-                <!--SECTION: INTEREST-->
-                <section class="interest-section">
-                    <div class="text">
-                        <p>Some things I'm interested in:</p>
-                            <div class="section-title">
-                                <li>-</li><br>
-                                <li>-</li><br>
-                                <li>-</li><br>
-                                <li>-</li><br> 
-                                <li>-</li>
-                            </div>   
-                        </p>              
-                    </div>
-                </section>
-
             </div>
         </div>
     </main>
-
 
     <script>
         document.getElementById('logo-toggle').addEventListener('click', function () {

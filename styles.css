@@ -28,20 +28,90 @@ a {
     color:#000000
 }
 
-.main-container {
-    display: flex;              /* Enables Flexbox */
-    justify-content: center;    /* Horizontally centers content */
-    text-align: left;           /* Ensures text inside is left-aligned */
-    min-height: 100vh;          /* Makes container fill the full viewport height */
-    padding: 20px;
+/* Sidebar styling */
+.logo {
+    display: flex;
+    width: 120px;
+    height: 120px;;
+    object-fit: contain;
 }
+
+.sidebar {
+    width: 200px;
+    min-height: 100vh;
+    padding: 30px 30px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar p {
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    color: #787878;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    font-weight: bold;
+    color: #000000;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+/*From here, Dark mode Css*/
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* 예시로 링크 색이나 사이드바 배경도 조정 가능 */
+body.dark-mode a {
+    color: #c6c4c4;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1e1e1e;
+}
+body.dark-mode .sidebar a.active {
+    font-weight: bold;
+    color: #dad9e2;
+}
+
+body.dark-mode .sidebar a:hover {
+    color: #e17acb;
+}
+/* Main container updated to allow sidebar + content */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
 
 .content-wrapper {
     max-width: 600px;
     width: 100%;
 }
 
-/* SECTION 1: HERO */
+/* SECTION: HERO */
 .hero-section {
     display: flex;
     justify-content: left;
@@ -64,7 +134,7 @@ a {
     color: #787878;
 }
 
-/* SECTION 2: ABOUT */
+/* SECTION: ABOUT */
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -74,17 +144,37 @@ a {
     max-width: 600px;
 }
 
-.about-section .text .section-title {
+.about-section .text p {
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.about-section .text .popup-content {
+.about-section .text .section-title {
     font-size: 14px;
     margin-left: 15px;
 }
 
-/* SECTION 3: CONTACT */
+/* SECTION: INTEREST */
+.interest-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    max-width: 600px;
+}
+
+.interest-section .text p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.interest-section .text .section-title {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+/* SECTION: CONTACT */
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -141,7 +231,7 @@ a:hover {
     color: #000000; /* Change color on hover */
 }
 
-/* SECTION 4: ESSAYS */
+/* SECTION: ESSAYS */
 .essay-section {
     display: flex;
     justify-content: space-between;
@@ -184,7 +274,7 @@ a:hover {
 }
 
 
-/* SECTION 4: EXTRA CURRICULAR */
+/* SECTION: EXTRA CURRICULAR */
 .extra-curricular-section {
     display: flex;
     justify-content: space-between;
@@ -194,7 +284,7 @@ a:hover {
     max-width: 600px;
 }
 
-.extra-curricular-section .text .section-title {
+.extra-curricular-section .text .title {
     margin-bottom: 15px;
     font-weight: bold;
     
@@ -295,7 +385,7 @@ a:hover {
     
 }
 
-/* SECTION 5: EDUCATION */
+/* SECTION: EDUCATION */
 .education-section {
     display: flex;
     justify-content: space-between;
@@ -337,7 +427,7 @@ a:hover {
     margin-left: 15px;
 }
 
-/* SECTION 6: OTHER LINKS */
+/* SECTION: OTHER LINKS */
 .other-links-section {
     display: flex;
     justify-content: space-between;
