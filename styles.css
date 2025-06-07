@@ -73,14 +73,13 @@ a {
     color: #000000;
 }
 
-/*From here, Dark mode Css*/
+/*From here, Dark mode CSS*/
 
 body.dark-mode {
     background-color: #121212;
     color: #f1f1f1;
 }
 
-/* 예시로 링크 색이나 사이드바 배경도 조정 가능 */
 body.dark-mode a {
     color: #c6c4c4;
 }
@@ -96,13 +95,21 @@ body.dark-mode .sidebar a.active {
 body.dark-mode .sidebar a:hover {
     color: #e17acb;
 }
+
+.dark-mode .hero-section .text p1 {
+    color: #c6c4c4;
+}
+
 /* Main container updated to allow sidebar + content */
 .main-container {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center; 
     align-items: flex-start;
     min-height: 100vh;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 

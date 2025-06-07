@@ -13,24 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="Images/pavicon.ico"/>
-
-    <style>
-        .popup-content {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .popup-content.show {
-            display: block;
-            opacity: 1;
-        }
-
-        /*.dark-mode {
-            cursor: pointer;
-        } */
-    </style>
+    <link rel="shortcut icon" href="Images/pavicon.ico">
 
 </head>
 
@@ -46,14 +29,15 @@
     <main>
         <div class="main-container">
 
-            <!-- Sidebar (left navigation) -->
+            <!-- Sidebar -->
             <nav class="sidebar">
+
                 <img src="Images/H Logo.svg" alt="Logo" id="logo-toggle" class="logo">
                 <p>Navigation</p><br>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="henry_essays.html">Essays</a></li>
-                    <li><a href="henry_ec.html">Extra-Curricular</a></li><br>
+                    <li><a href="#" id="nav-home" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" id="nav-essays" onclick="showSection('essays')">Essays</a></li>
+                    <li><a href="#" id="nav-ec" onclick="showSection('ec')">Extra-Curricular</a></li><br>
                 </ul>
 
                 <p>Find me on</p><br>
@@ -63,53 +47,155 @@
                     <li><a href="https://github.com/yxxjx-dsnv">GitHub</a></li>
                     <li><a href="mailto:mail2yjkim@gmail.com">Email</a></li>
                 </ul>
+
             </nav>
 
-            <!-- Home -->
+            <!-- Main Content Sections -->
             <div class="content-wrapper">
 
-                <!--SECTION: HERO-->
-                <section class="hero-section">
-                    <div class="text">
-                        <h1>Henry Kim</h1>
-                        <p1>last updated: 2025/06/03</p1>
-                    </div>
-                </section>
+                <!--SECTION HOME-->
+                <section id="home" class="section">
 
-                <!--SECTION: ABOUT-->
-                <section class="about-section">
-                    <div class="text">
-                        <p>Some things about me:</p>
-                        <div class="section-title">
-                            <li>17-years-old, born in South Korea — incoming Engineering Science student at the University of Toronto.</li><br>
-                            <li>Currently working on a startup called <a href="https://mono.com" target="_blank">MONO</a> as the Founder & CEO.</li><br>
-                            <li>Previously worked as a Project Leader at WGSS Grad Council 2025, President at WGSS LEO Club, and Co-President at Unity 4 Charity (U4C).</li>
-                        </div>   
-                        </p>              
-                    </div>
-                </section>
+                    <!--SECTION HOME: HERO-->
+                    <section class="hero-section">
+                        <div class="text">
+                            <h1>Henry Kim</h1>
+                            <p1>last updated: 2025/06/03</p1>
+                        </div>
+                    </section>
 
-                <!--SECTION: INTEREST-->
-                <section class="interest-section">
-                    <div class="text">
-                        <p>Some things I'm interested in:</p>
+                    <!--SECTION HOME: ABOUT-->
+                    <section class="about-section">
+                        <div class="text">
+                            <p>Some things about me:</p>
                             <div class="section-title">
-                                <li>-</li><br>
-                                <li>-</li><br>
-                                <li>-</li>
+                                <li>17-years-old, born in South Korea — incoming Engineering Science student at the University of Toronto.</li><br>
+                                <li>Currently working on a startup called <a href="https://mono.com" target="_blank">MONO</a> as the Founder & CEO.</li><br>
+                                <li>Previously worked as a Project Leader at WGSS Grad Council 2025, President at WGSS LEO Club, and Co-President at Unity 4 Charity (U4C).</li>
                             </div>   
-                        </p>              
-                    </div>
+                            </p>              
+                        </div>
+                    </section>
+
+                    <!--SECTION HOME: INTEREST-->
+                    <section class="interest-section">
+                        <div class="text">
+                            <p>Some things I'm interested in:</p>
+                                <div class="section-title">
+                                    <li>-</li><br>
+                                    <li>-</li><br>
+                                    <li>-</li>
+                                </div>   
+                            </p>
+                        </div>
+                    </section>
+
+                </section>
+
+                <!-- SECTION ESSAYS -->
+                <section id="essays" class="section" style="display:none;">
+
+                    <!--SECTION ESSAYS: HERO-->
+                    <section class="hero-section">
+                        <div class="text">
+                            <h1>Learnings from past three years</h1>
+                            <p1>written: 2025/01/02</p1>
+                        </div>
+                    </section>
+
+                    <!--SECTION ESSAYS: ABOUT-->
+                    <section class="essay-section">
+                        <div class="text">
+                            <p><b>Prompt: Discuss an accomplishment, event, or realization that sparked a period of personal growth and a new understanding of yourself or others.</b></p><br>
+                            <p>In August 2022, I stood alone at Incheon International Airport, poised to board a flight to Canada. It was a leap into the unknown. As the plane climbed, Neil Armstrong's words resonated in my brain: "That's one small step for a man, one giant leap for mankind." For me, this flight symbolized more than just changing my address. It was a transforming start, an opportunity to grow and reshape my future.</p><br>
+                            <p>My first few days in Canada were a whirlwind of challenges. Taking classes in a foreign language, adjusting to new cultures, and living independently challenged me in ways I never imagined. Despite this whirlwind, I saw an opportunity to stretch beyond my comfort zone and get closer to my goals. Being an entrepreneur in a global marketplace, a vision I've long had, necessitated resilience and leadership. When I joined Unity 4 Charity (U4C), a non-profit that supports climate refugees and Indigenous communities, I recognized an opportunity to cultivate these traits.</p><br>
+                            <p>At the time, U4C was bursting with enthusiasm but lacked structure. Meetings floundered without a clear direction, roles were unclear, and progress was slow. Where others saw chaos, I saw possibilities. I set out on the ambitious mission of converting the organization into an efficient, goal-driven institution fuelled by my optimism.</p><br>
+                            <p>I began by examining the personnel management systems of global leaders such as Apple and Amazon, which prompted a thorough structural redesign. U4C was reorganized into four departments: planning and development, communications and media, operations and administration, and volunteer services. Each department was assigned specific duties that were unified by the goal of obtaining official non-profit certification. Over several months, I interviewed 40 members to determine their skills and placed them in places where they could thrive.</p><br>
+                            <p>Our first significant challenge took the form of a fundraising effort. Each department met weekly to prepare: the Planning team researched and designed things to sell, Communications created engaging promotional materials, Operations secured event sites, and Volunteer Service trained members to interact with the public. The campaign's success exceeded all expectations, paving the way for future efforts. U4C acquired non-profit status in British Columbia in November 2023, demonstrating all members' commitment.</p><br>
+                            <p>This adventure showed me that leadership is about empowerment, not control. Leadership brings people together under a shared vision, creating an atmosphere to ignite innovation. However, the most important lesson was not about systems or strategies; resilience is the ability to turn setbacks into opportunities and persevere toward a goal. </p><br>
+                            <p>Throughout the campaign, we encountered obstacles that tested us. Creative solutions were needed to capture public interest, and moments of discord required careful mediation to align perspectives. These problems served as growth opportunities for both me and the organization. I learned how to navigate the complexities of team interactions while remaining focused on the broader picture.</p><br>
+                            <p>The experience with U4C was revolutionary. It taught me the value of collaboration and balancing individual potential with a larger objective. Designing systems to increase organizational efficiency while nurturing passion and creativity became a pillar of my leadership. Furthermore, I gained the confidence to lead in uncertain, high-pressure situations. </p><br>
+                            <p>Reflecting on this voyage, I reimagined how uncertain I felt as I boarded that plane to Canada. Back then, I feared the unknown, unsure of my readiness. But now I realize that challenges are not obstacles; they are opportunities to improve. Failures do not mark the end; rather, they serve as stepping stones to achievement. Each tiny action performed with intent builds the basis for something greater. </p><br>
+                            <p>As I prepare to embark on the next stage in college, I carry the lessons learned from this experience. The fortitude to face uncertainty, the ingenuity to solve difficulties, and the determination to bring people together behind a common vision will guide me. Just as that flight to Canada marked the beginning, I am ready to take another leap, understanding that the journey begins with a single step.</p><br>
+                        </div>
+                    </section>
+
+                </section>
+
+                <!-- SECTION EXTRA CURRICULAR -->
+                <section id="ec" class="section" style="display:none;">
+
+                    <!--SECTION EXTRA CURRICULAR: HERO-->
+                    <section class="hero-section">
+                        <div class="text">
+                            <h1>Extra-Curricular</h1>
+                        </div>
+                    </section>
+        
+                    <!--SECTION EXTRA CURRICULAR: EXTRA-CURRICULAR-->
+                    <section class="extra-curricular-section">
+                        <div class="text">
+                            <div class="title">
+                                <p>-</p>
+                            </div>
+                                <div class="MONO-div">
+                                    <p>Founder & CEO at <a href="https://www.instagram.com/wgssgrads25/" target="_blank">MONO</a> (Startup)</p>
+                                    <p1>May 2025 - present</p1>
+                                </div>
+                                <div class="GC25-div">
+                                    <p>Project Leader at WGSS Grad Council 2025 <a href="https://www.instagram.com/wgssgrads25/" target="_blank">(@wgssgrads25)</a></p>
+                                    <p1>May 2024 - present</p1>
+                                </div>
+                                <div class="WGLC-div">
+                                    <p>President at WGSS LEO Club <a href="https://www.instagram.com/wgssleos/" target="_blank">(@wgssleos)</a></p>
+                                    <p1>Sep 2023 - Present</p1>
+                                </div>
+                                <div class="U4C-div">
+                                    <p>Co-President at <a href="https://unity4charity.com" target="_blank">Unity 4 Charity (U4C)</a></p>
+                                    <p1>Aug 2023 - Present</p1>
+                                <div class="WGKCC-div">
+                                    <p>Vice-President at WGSS Korean Culture Club <a href="https://www.instagram.com/wgsskoreancultureclub/" target="_blank">(@wgsskoreancultureclub)</a></p>
+                                    <p1>Jun 2024 - Mar 2025</p1>
+                                </div>
+                                <div class="TACKK-div">
+                                    <p>Teaching Assistants (TA) at <a href="https://www.kwanglim.ca/school" target="_blank">Canada Kwanglim Korean School</a></p>
+                                    <p1>Aug 2024 - Jan 2025</p1>
+                                </div>
+                        </div>
+                    </section>
+
                 </section>
 
             </div>
         </div>
     </main>
 
-
     <script>
+        function showSection(id) {
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById(id).style.display = 'block';
+
+        // Update active nav link
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            link.classList.remove('active');
+        });
+        const navLink = document.getElementById('nav-' + id);
+        if (navLink) navLink.classList.add('active');
+        }
+
+        // On page load, default to home
+        window.onload = () => {
+        const savedMode = localStorage.getItem('darkMode');
+        if (savedMode === 'enabled') document.body.classList.add('dark-mode');
+        showSection('home');
+        };
+
+        // Dark mode toggle
         document.getElementById('logo-toggle').addEventListener('click', function () {
-            document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
         });
     </script>
 
