@@ -118,7 +118,6 @@ body.dark-mode .sidebar a:hover {
     width: 100%;
 }
 
-/* SECTION: HERO */
 .hero-section {
     display: flex;
     justify-content: left;
@@ -141,7 +140,8 @@ body.dark-mode .sidebar a:hover {
     color: #787878;
 }
 
-/* SECTION: ABOUT */
+/* SECTION HOME */
+/* SECTION HOME: ABOUT */
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -161,7 +161,7 @@ body.dark-mode .sidebar a:hover {
     margin-left: 15px;
 }
 
-/* SECTION: INTEREST */
+/* SECTION HOME: INTEREST */
 .interest-section {
     display: flex;
     justify-content: space-between;
@@ -181,64 +181,8 @@ body.dark-mode .sidebar a:hover {
     margin-left: 15px;
 }
 
-/* SECTION: CONTACT */
-.contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    max-width: 600px;
-}
-
-.contact-section .text .section-title {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.contact-section .text .email-div {
-    font-weight: lighter;
-    margin-bottom: 15px;
-    font-size: 14px;
-    margin-left: 15px;
-}
-
-.contact-section .text .email-div p {
-    color: #000000;
-}
-
-.contact-section .text .instagram-div {
-    font-weight: lighter;
-    font-size: 14px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-}
-
-.contact-section .text .instagram-div p {
-    color: #000000;
-}
-
-.contact-section .text .Github-div {
-    font-weight: lighter;
-    margin-bottom: 15px;
-    font-size: 14px;
-    margin-left: 15px;
-}
-
-.contact-section .text .Github-div p {
-    color: #000000;
-}
-
-a {
-    color: #868686; /* Change link color */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #000000; /* Change color on hover */
-}
-
-/* SECTION: ESSAYS */
+/* SECTION ESSAYS */
+/* SECTION: ESSAYS: ABOUT */
 .essay-section {
     display: flex;
     justify-content: space-between;
@@ -248,40 +192,18 @@ a:hover {
     max-width: 600px;
 }
 
-.essay-section .text .section-title {
+.essay-section .text .section-title p {
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 16px;
 }
 
-.essay-section .text .startup-learnings-div p {
-    font-size: 14px;
+.essay-section .text .section-body p {
+    font-size: 15px;
     font-weight: lighter;
-    margin-left: 15px;
-}
-.essay-section .text .startup-learnings-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
 }
 
-.essay-section .text .sirtuins-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
-.essay-section .text .sirtuins-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-
-/* SECTION: EXTRA CURRICULAR */
+/* SECTION EXTRA CURRICULAR */
+/* SECTION EXTRA CURRICULAR: EXTRA-CURRICULAR */
 .extra-curricular-section {
     display: flex;
     justify-content: space-between;
@@ -392,72 +314,6 @@ a:hover {
     
 }
 
-/* SECTION: EDUCATION */
-.education-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 40px;
-    max-width: 600px;
-}
-
-.education-section .text .section-title {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.education-section .text .uToronto-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-}
-
-.education-section .text .uToronto-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-.education-section .text .WGSS-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.education-section .text .WGSS-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-/* SECTION: OTHER LINKS */
-.other-links-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 40px;
-    max-width: 600px;
-}
-
-.other-links-section .text .section-title {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.other-links-section .text .links a {
-    color: #000000;
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 30px;
-    margin-top: 15px;
-    font-weight: lighter;
-}
-
-.other-links-section .text .links a:hover {
-    color: #2F4858;
+html {
+    scrollbar-gutter: stable;
 }
