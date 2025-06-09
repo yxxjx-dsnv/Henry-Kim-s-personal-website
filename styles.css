@@ -317,3 +317,75 @@ body.dark-mode .sidebar a:hover {
 html {
     scrollbar-gutter: stable;
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .sidebar p {
+        text-align: center;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .content-wrapper,
+    .hero-section,
+    .about-section,
+    .interest-section,
+    .essay-section,
+    .extra-curricular-section {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+
+    .hero-section .text h1 {
+        font-size: 28px;
+    }
+
+    .hero-section .text p1,
+    .about-section .text p,
+    .interest-section .text p,
+    .essay-section .text .section-title p,
+    .extra-curricular-section .text p {
+        font-size: 13px;
+    }
+
+    .extra-curricular-section .text .title {
+        text-align: center;
+    }
+
+    /* 줄바꿈 등 여백 정리 */
+    .section-title li,
+    .section-title p,
+    .section-body p,
+    .extra-curricular-section p,
+    .extra-curricular-section p1 {
+        line-height: 1.5;
+    }
+}
