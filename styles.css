@@ -318,74 +318,95 @@ html {
     scrollbar-gutter: stable;
 }
 
+/* 사이드 탭 (화살표 버튼) */
+#side-tab {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1001;
+    cursor: pointer;
+
+    /* animation */
+    opacity: 1;
+    transition: opacity 0.4s ease, left 0.4s ease;
+}
+
+/* 사라질 때: 왼쪽으로 밀고 투명하게 */
+#side-tab.hidden {
+    opacity: 0;
+    left: -40px;
+    pointer-events: none;
+}
+
+/* 기본: 숨김 */
+#side-tab {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+/* 모바일 전용 */
 @media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        padding: 0 20px;
+    #side-tab {
+        display: block;
     }
 
     .sidebar {
-        position: static;
-        width: 100%;
-        min-height: auto;
-        padding: 20px;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: fixed;
+        left: -220px;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #f8f8f8;
+        transition: left 0.3s ease;
+        z-index: 1000;
     }
 
-    .sidebar ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        padding: 0;
+    .sidebar.open {
+        left: 0;
     }
 
-    .sidebar p {
-        text-align: center;
+    .sidebar.open .close-btn {
+        display: block;
+    }
+}
+
+/* 데스크탑 전용 */
+@media (min-width: 769px) {
+    .sidebar {
+        position: sticky;
+        left: 0;
     }
 
-    .logo {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
+    #side-tab {
+        display: none !important;
     }
 
-    .content-wrapper,
-    .hero-section,
-    .about-section,
-    .interest-section,
-    .essay-section,
-    .extra-curricular-section {
-        padding: 20px 10px;
-        max-width: 100%;
+    .close-btn {
+        display: none !important;
     }
+}
 
-    .hero-section .text h1 {
-        font-size: 28px;
-    }
-
-    .hero-section .text p1,
-    .about-section .text p,
-    .interest-section .text p,
-    .essay-section .text .section-title p,
-    .extra-curricular-section .text p {
-        font-size: 13px;
-    }
-
-    .extra-curricular-section .text .title {
-        text-align: center;
-    }
-
-    /* 줄바꿈 등 여백 정리 */
-    .section-title li,
-    .section-title p,
-    .section-body p,
-    .extra-curricular-section p,
-    .extra-curricular-section p1 {
-        line-height: 1.5;
-    }
+/* 닫기 버튼 (사이드바 우측 상단) */
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
 }

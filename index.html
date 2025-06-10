@@ -20,10 +20,12 @@
 <body>
 
     <main>
+        <div id="side-tab">&#8250;</div>
         <div class="main-container">
 
             <!-- Sidebar -->
             <nav class="sidebar">
+                <div class="close-btn" id="close-sidebar">×</div>
 
                 <img src="Images/H Logo.svg" alt="Logo" id="logo-toggle" class="logo" >
                 <p>Navigation</p><br>
@@ -245,6 +247,40 @@
         }
         `;
         document.head.appendChild(style);
+
+        document.getElementById('side-tab').addEventListener('click', () => {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('open');
+        });
+
+        const sidebar = document.querySelector('.sidebar');
+        const sideTab = document.getElementById('side-tab');
+        const closeBtn = document.getElementById('close-sidebar');
+        const mainContainer = document.querySelector('.main-container');
+
+        // 열기
+        sideTab.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            sideTab.classList.add('hidden'); // 자연스럽게 사라짐
+        });
+
+        // 닫기 (X 버튼)
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            setTimeout(() => {
+                sideTab.classList.remove('hidden'); // 자연스럽게 나타남
+            }, 10); // 트랜지션 시간과 맞춰줌
+        });
+
+        // 닫기 (바깥 클릭)
+        mainContainer.addEventListener('click', (e) => {
+            if (sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+                setTimeout(() => {
+                    sideTab.classList.remove('hidden');
+                }, 10);
+            }
+        });
 
     </script>
 
