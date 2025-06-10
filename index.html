@@ -258,21 +258,21 @@
         const closeBtn = document.getElementById('close-sidebar');
         const mainContainer = document.querySelector('.main-container');
 
-        // 열기
+        
         sideTab.addEventListener('click', () => {
             sidebar.classList.add('open');
-            sideTab.classList.add('hidden'); // 자연스럽게 사라짐
+            sideTab.classList.add('hidden');
         });
 
-        // 닫기 (X 버튼)
+        
         closeBtn.addEventListener('click', () => {
             sidebar.classList.remove('open');
             setTimeout(() => {
-                sideTab.classList.remove('hidden'); // 자연스럽게 나타남
-            }, 10); // 트랜지션 시간과 맞춰줌
+                sideTab.classList.remove('hidden');
+            }, 10);
         });
 
-        // 닫기 (바깥 클릭)
+        
         mainContainer.addEventListener('click', (e) => {
             if (sidebar.classList.contains('open')) {
                 sidebar.classList.remove('open');
