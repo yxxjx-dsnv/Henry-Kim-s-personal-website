@@ -203,19 +203,16 @@
             const path = window.location.pathname.replace('/', '') || 'home';
             const section = ['home', 'essays', 'extra-curricular'].includes(path) ? path : 'home';
             showSection(section);
-            const savedMode = localStorage.getItem('darkMode');
-            if (savedMode === 'enabled') document.body.classList.add('dark-mode');
-            if (savedMode === 'enabled') document.body.classList.add('dark-mode');
-            document.getElementById('logo-toggle').src = savedMode === 'enabled' ? 'Images/H Logo White.svg' : 'Images/H Logo.svg';
+            document.body.classList.remove('dark-mode');
+            document.getElementById('logo-toggle').src = 'Images/H Logo.svg';
             showSection('home');
         };
 
         document.getElementById('logo-toggle').addEventListener('click', function () {
-        document.body.classList.toggle('dark-mode');
-        document.getElementById('logo-toggle').src = document.body.classList.contains('dark-mode')
-            ? 'Images/H Logo - White.svg'
-            : 'Images/H Logo.svg';
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+            document.body.classList.toggle('dark-mode');
+            document.getElementById('logo-toggle').src = document.body.classList.contains('dark-mode')
+                ? 'Images/H Logo - White.svg'
+                : 'Images/H Logo.svg';
         });
 
         document.getElementById("korea-trigger").addEventListener("click", () => {
