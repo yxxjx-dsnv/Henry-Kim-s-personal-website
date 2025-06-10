@@ -201,6 +201,9 @@
         };
 
         window.onload = () => {
+            if (!window.location.hash) {
+                history.replaceState(null, '', '/#home');
+            }
             const path = window.location.pathname.replace('#', '') || 'home';
             const section = ['home', 'essays', 'extra-curricular'].includes(path) ? path : 'home';
             showSection(section);
