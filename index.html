@@ -192,16 +192,16 @@
             event.preventDefault();
             showSection(sectionId);
             window.scrollTo({ top: 0, behavior: 'instant' });
-            history.pushState({ section: sectionId }, '', '/' + sectionId);
+            history.pushState({ section: sectionId }, '', '/#' + sectionId);
         }
 
         window.onpopstate = function (event) {
-            const section = event.state?.section || 'home';
+            const section = window.location.hash.replace('#', '') || 'home';
             showSection(section);
         };
 
         window.onload = () => {
-            const path = window.location.pathname.replace('/', '') || 'home';
+            const path = window.location.pathname.replace('#', '') || 'home';
             const section = ['home', 'essays', 'extra-curricular'].includes(path) ? path : 'home';
             showSection(section);
             document.body.classList.remove('dark-mode');
