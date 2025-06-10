@@ -100,6 +100,10 @@ body.dark-mode .sidebar a:hover {
     color: #c6c4c4;
 }
 
+.dark-mode .extra-curricular-section .text .section-title .date p {
+    color: #c6c4c4;
+}
+
 /* Main container updated to allow sidebar + content */
 .main-container {
     display: flex;
@@ -218,11 +222,11 @@ body.dark-mode .sidebar a:hover {
     font-size: 14px
 }
 
-.extra-curricular-section .text .section-title p1 {
+.extra-curricular-section .text .section-title .date p {
     font-size: 14px;
     font-weight: lighter;
-    color: #868686;
-    margin-bottom: 15px;
+    color: #787878;
+    /*margin-bottom: 15px;*/
     
 }
 
