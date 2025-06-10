@@ -234,7 +234,7 @@ html {
     scrollbar-gutter: stable;
 }
 
-/* 사이드 탭 (화살표 버튼) */
+/* side-tab */
 #side-tab {
     display: block;
     position: fixed;
@@ -258,14 +258,14 @@ html {
     transition: opacity 0.4s ease, left 0.4s ease;
 }
 
-/* 사라질 때: 왼쪽으로 밀고 투명하게 */
+/* hide motion */
 #side-tab.hidden {
     opacity: 0;
     left: -40px;
     pointer-events: none;
 }
 
-/* 기본: 숨김 */
+/* default: hide */
 #side-tab {
     display: none;
 }
@@ -274,7 +274,7 @@ html {
     display: none;
 }
 
-/* 모바일 전용 */
+/* Mobile Ver */
 @media (max-width: 768px) {
     #side-tab {
         display: block;
@@ -290,9 +290,8 @@ html {
         transition: left 0.3s ease;
         z-index: 1000;
 
-        /* ✅ 추가: 스크롤 설정 */
         overflow-y: auto;
-        -webkit-overflow-scrolling: touch; /* iOS 부드럽게 */
+        -webkit-overflow-scrolling: touch;
     }
 
     .sidebar.open {
@@ -304,7 +303,7 @@ html {
     }
 }
 
-/* 데스크탑 전용 */
+/* Desktop Ver */
 @media (min-width: 769px) {
     .sidebar {
         position: sticky;
@@ -320,7 +319,7 @@ html {
     }
 }
 
-/* 닫기 버튼 (사이드바 우측 상단) */
+/* Close button */
 .close-btn {
     display: none;
     position: absolute;
