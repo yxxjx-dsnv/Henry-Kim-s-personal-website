@@ -213,104 +213,16 @@ body.dark-mode .sidebar a:hover {
     max-width: 600px;
 }
 
-.extra-curricular-section .text .title {
+.extra-curricular-section .text .section-title p {
+    font-weight: lighter;
+    font-size: 14px
+}
+
+.extra-curricular-section .text .section-title p1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #868686;
     margin-bottom: 15px;
-    font-weight: bold;
-    
-}
-
-.extra-curricular-section .text .MONO-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-    
-}
-
-.extra-curricular-section .text .MONO-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-    
-}
-
-.extra-curricular-section .text .GC25-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-    
-}
-
-.extra-curricular-section .text .GC25-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-    
-}
-
-.extra-curricular-section .text .WGLC-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-}
-
-.extra-curricular-section .text .WGLC-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-.extra-curricular-section .text .U4C-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-}
-
-.extra-curricular-section .text .U4C-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-.extra-curricular-section .text .WGKCC-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-}
-
-.extra-curricular-section .text .WGKCC-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
-}
-
-.extra-curricular-section .text .TACKK-div p {
-    font-size: 14px;
-    font-weight: lighter;
-    margin-left: 15px;
-    margin-top: 15px;
-    
-}
-
-.extra-curricular-section .text .TACKK-div p1 {
-    font-size: 14px;
-    font-weight: lighter;
-    color: #868686;
-    margin-left: 15px;
     
 }
 
