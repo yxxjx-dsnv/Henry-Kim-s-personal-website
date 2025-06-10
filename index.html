@@ -31,8 +31,8 @@
                 <p>Navigation</p><br>
                 <ul>
                     <li><a href="/" id="nav-home" onclick="navigate(event, 'home')">Home</a></li>
-                    <li><a href="/essays" id="nav-essays" onclick="navigate(event, 'essays')">Essays</a></li>
-                    <li><a href="/extra-curricular" id="nav-extra-curricular" onclick="navigate(event, 'extra-curricular')">Extra-Curricular</a></li><br>
+                    <li><a href="#essays" id="nav-essays" onclick="navigate(event, 'essays')">Essays</a></li>
+                    <li><a href="#extra-curricular" id="nav-extra-curricular" onclick="navigate(event, 'extra-curricular')">Extra-Curricular</a></li><br>
                 </ul>
 
                 <p>Find me on</p><br>
@@ -204,8 +204,8 @@
             if (!window.location.hash) {
                 history.replaceState(null, '', '/#home');
             }
-            const path = window.location.pathname.replace('#', '') || 'home';
-            const section = ['home', 'essays', 'extra-curricular'].includes(path) ? path : 'home';
+            const hash = window.location.hash.replace('#', '') || 'home';
+            const section = ['home', 'essays', 'extra-curricular'].includes(hash) ? hash : 'home';
             showSection(section);
             document.body.classList.remove('dark-mode');
             document.getElementById('logo-toggle').src = 'Images/H Logo.svg';
