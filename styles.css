@@ -100,10 +100,6 @@ body.dark-mode .sidebar a:hover {
     color: #c6c4c4;
 }
 
-.dark-mode .extra-curricular-section .text .section-title .date p {
-    color: #c6c4c4;
-}
-
 /* Main container updated to allow sidebar + content */
 .main-container {
     display: flex;
@@ -217,17 +213,50 @@ body.dark-mode .sidebar a:hover {
     max-width: 600px;
 }
 
-.extra-curricular-section .text .section-title p {
+.extra-curricular-section .text .activity-item p {
     font-weight: lighter;
     font-size: 14px
 }
 
-.extra-curricular-section .text .section-title .date p {
+.extra-curricular-section .text .activity-item .date p {
     font-size: 14px;
     font-weight: lighter;
     color: #787878;
-    /*margin-bottom: 15px;*/
-    
+}
+
+.activity-item {
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.detail-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+    padding: 0;
+    opacity: 0;
+    color: #787878
+}
+
+.activity-item:hover .detail-box {
+    max-height: 300px;
+    padding: 20px 0;
+    opacity: 1;
+}
+
+/* 다크모드 대응 */
+body.dark-mode .detail-box {
+    background-color: #121212;
+    color: #c6c4c4;
+}
+
+body.dark-mode .activity-item:hover .date p {
+    color: #c6c4c4;
+}
+
+body.dark-mode .extra-curricular-section .text .activity-item .date p {
+    color: #c6c4c4;
 }
 
 html {

@@ -55,7 +55,7 @@
                     <section class="hero-section">
                         <div class="text">
                             <h1>Henry Kim</h1>
-                            <p1>last updated: 2025/06/08</p1>
+                            <p1>last updated: 2025/06/12</p1>
                         </div>
                     </section>
 
@@ -131,34 +131,62 @@
                     <section class="hero-section">
                         <div class="text">
                             <h1>Extra-Curricular</h1>
-                            <p1>last updated: 2025/06/03</p1>
+                            <p1>last updated: 2025/06/12</p1>
                         </div>
                     </section>
         
                     <!--SECTION EXTRA CURRICULAR: EXTRA-CURRICULAR-->
                     <section class="extra-curricular-section">
                         <div class="text">
-                            <div class="section-title">
-                                
-                                    <p>Founder & CEO at <a target="_blank">MONO</a> (Startup)</p>
-                                    <div class="date"><p>May 2025 - present</p></div><br>
-                                
-                                    <p>Project Leader at WGSS Grad Council 2025 <a href="https://www.instagram.com/wgssgrads25/" target="_blank">(@wgssgrads25)</a></p>
-                                    <div class="date"><p>May 2024 - present</p></div><br>
-                                
-                                    <p>President at WGSS LEO Club <a href="https://www.instagram.com/wgssleos/" target="_blank">(@wgssleos)</a></p>
-                                    <div class="date"><p>Sep 2023 - Present</p></div><br>
-                                
-                                    <p>Co-President at <a href="https://unity4charity.com" target="_blank">Unity 4 Charity (U4C)</a></p>
-                                    <div class="date"><p>Aug 2023 - Present</p></div><br>
-                                
-                                    <p>Vice-President at WGSS Korean Culture Club <a href="https://www.instagram.com/wgsskoreancultureclub/" target="_blank">(@wgsskoreancultureclub)</a></p>
-                                    <div class="date"><p>Jun 2024 - Mar 2025</p></div><br>
-                                
-                                    <p>Teaching Assistants (TA) at <a href="https://www.kwanglim.ca/school" target="_blank">Canada Kwanglim Korean School</a></p>
-                                    <div class="date"><p>Aug 2024 - Jan 2025</p></div><br>
-                                
+
+                            <div class="activity-item hover-reveal">
+                                <p>Founder & CEO at <a target="_blank">MONO</a> (Startup)</p>
+                                <div class="date"><p>May 2025 - present</p></div>
+                                <div class="detail-box">
+                                    <p>Developed an AI-powered resale analytics platform that compares global retail and resale prices, predicts profit margins, and automates Shopify listings for e-commerce users.</p>
+                                </div>
                             </div>
+
+                            <div class="activity-item hover-reveal">
+                                <p>Project Leader at WGSS Grad Council 2025 <a href="https://www.instagram.com/wgssgrads25/" target="_blank">(@wgssgrads25)</a></p>
+                                <div class="date"><p>May 2024 - Jun 2025</p></div>
+                                <div class="detail-box">
+                                    <p>Directed key student-led initiatives such as prom planning, fundraising strategy, and merchandise design. Liaised with school leadership to ensure effective coordination.</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item hover-reveal">
+                                <p>President at WGSS LEO Club <a href="https://www.instagram.com/wgssleos/" target="_blank">(@wgssleos)</a></p>
+                                <div class="date"><p>Sep 2023 - Jun 2025</p></div>
+                                <div class="detail-box">
+                                    <p>Expanded the club’s impact through new volunteer initiatives, strategic partnerships, and active recruitment. Led over 50 members to organize service projects in the community.</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item hover-reveal">
+                                <p>Co-President at <a href="https://unity4charity.com" target="_blank">Unity 4 Charity (U4C)</a></p>
+                                <div class="date"><p>Aug 2023 - Jun 2025</p></div>
+                                <div class="detail-box">
+                                    <p>Transformed the club structure into four departments, achieved official BC non-profit certification, and led fundraising events supporting climate refugees and Indigenous communities.</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item hover-reveal">
+                                <p>Vice-President at WGSS Korean Culture Club <a href="https://www.instagram.com/wgsskoreancultureclub/" target="_blank">(@wgsskoreancultureclub)</a></p>
+                                <div class="date"><p>Jun 2024 - Mar 2025</p></div>
+                                <div class="detail-box">
+                                    <p>Organized cultural festivals, language workshops, and food events promoting Korean heritage. Helped grow club visibility and member participation across the school.</p>
+                                </div>
+                            </div>
+
+                            <div class="activity-item hover-reveal">
+                                <p>Teaching Assistant (TA) at <a href="https://www.kwanglim.ca/school" target="_blank">Canada Kwanglim Korean School</a></p>
+                                <div class="date"><p>Aug 2024 - Jan 2025</p></div>
+                                <div class="detail-box">
+                                    <p>Supported teachers in lesson delivery, helped manage classroom dynamics, and provided personalized tutoring to students in foundational Korean language classes.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </section>
 
@@ -273,6 +301,20 @@
                 }, 10);
             }
         });
+
+        function toggleDetail(element) {
+            const isActive = element.classList.contains('active');
+
+            // 모든 활동 박스 닫기
+            document.querySelectorAll('.activity-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // 원래 클릭한 항목 다시 열기 (닫기 toggle 효과)
+            if (!isActive) {
+                element.classList.add('active');
+            }
+        }
 
     </script>
 
