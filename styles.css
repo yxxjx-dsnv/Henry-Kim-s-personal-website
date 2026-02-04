@@ -365,12 +365,6 @@ html {
     .sidebar.open .close-btn {
         display: block;
     }
-
-    .activity-item:hover .detail-box {
-    max-height: 0;
-    padding: 0;
-    opacity: 0;
-  }
 }
 
 
