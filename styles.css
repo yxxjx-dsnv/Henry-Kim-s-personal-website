@@ -141,7 +141,7 @@ body.dark-mode .sidebar a:hover {
 }
 
 /* SECTION HOME */
-/* SECTION HOME: ABOUT */
+/* SECTION HOME: ABOUT and INTEREST */
 .about-section {
     display: flex;
     justify-content: space-between;
@@ -157,26 +157,6 @@ body.dark-mode .sidebar a:hover {
 }
 
 .about-section .text .section-title {
-    font-size: 14px;
-    margin-left: 15px;
-}
-
-/* SECTION HOME: INTEREST */
-.interest-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 40px;
-    max-width: 600px;
-}
-
-.interest-section .text p {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.interest-section .text .section-title {
     font-size: 14px;
     margin-left: 15px;
 }
@@ -354,7 +334,7 @@ html {
         transition: left 0.3s ease;
         z-index: 1000;
 
-        /* overflow-y: auto; */
+        overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
