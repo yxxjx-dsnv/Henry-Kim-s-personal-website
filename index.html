@@ -238,10 +238,13 @@
 
         function navigate(event, sectionId) {
             event.preventDefault();
+            
             showSection(sectionId);
             window.scrollTo({ top: 0, behavior: 'instant' });
             history.pushState({ section: sectionId }, '', '/#' + sectionId);
         }
+
+
 
         window.onpopstate = function (event) {
             const section = window.location.hash.replace('#', '') || 'home';
@@ -304,6 +307,7 @@
         const mainContainer = document.querySelector('.main-container');
 
         
+        
         sideTab.addEventListener('click', () => {
             sidebar.classList.add('open');
             sideTab.classList.add('hidden');
@@ -317,7 +321,6 @@
             }, 10);
         });
 
-        
         mainContainer.addEventListener('click', (e) => {
             if (sidebar.classList.contains('open')) {
                 sidebar.classList.remove('open');

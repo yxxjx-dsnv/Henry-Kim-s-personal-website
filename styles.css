@@ -237,7 +237,7 @@ body.dark-mode .sidebar a:hover {
 
 /* 꽉 찬 원 */
 .activity-item:hover::before,
-/* .activity-item.active::before, */
+.activity-item.active::before, */
 .activity-item.in-view::before {
   background-color: #000000;
   border-color: #000000;
@@ -248,7 +248,7 @@ body.dark-mode .activity-item::before {
   border-color: #c6c4c4;
 }
 body.dark-mode .activity-item:hover::before,
-/* body.dark-mode .activity-item.active::before, */
+body.dark-mode .activity-item.active::before, */
 body.dark-mode .activity-item.in-view::before {
   background-color: #dad9e2;
   border-color: #dad9e2;
