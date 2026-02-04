@@ -365,7 +365,14 @@ html {
     .sidebar.open .close-btn {
         display: block;
     }
+
+    .activity-item:hover .detail-box {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+  }
 }
+
 
 /* Desktop Ver */
 @media (min-width: 769px) {
