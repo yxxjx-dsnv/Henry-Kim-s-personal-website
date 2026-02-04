@@ -354,7 +354,7 @@ html {
         transition: left 0.3s ease;
         z-index: 1000;
 
-        overflow-y: auto;
+        /* overflow-y: auto; */
         -webkit-overflow-scrolling: touch;
     }
 
