@@ -228,6 +228,7 @@ body.dark-mode .sidebar a:hover {
     margin-bottom: 20px;
     transition: all 0.6s ease;
     position: relative;
+    padding-left: 18px;
 }
 
 .detail-box {
@@ -238,6 +239,34 @@ body.dark-mode .sidebar a:hover {
     opacity: 0;
     color: #787878
 }
+
+.activity-item::before {
+  content: "◦";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  color: #787878;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* 데스크탑 hover, 모바일 클릭(active), 스크롤로 화면에 들어옴(in-view) */
+.activity-item:hover::before,
+.activity-item.active::before,
+.activity-item.in-view::before {
+  content: "●";
+  color: #000000;
+}
+
+/* 다크모드 */
+body.dark-mode .activity-item::before {
+  color: #c6c4c4;
+}
+body.dark-mode .activity-item:hover::before,
+body.dark-mode .activity-item.active::before,
+body.dark-mode .activity-item.in-view::before {
+  color: #dad9e2;
+}
+
 
 .activity-item:hover .detail-box {
     max-height: 9990px;
