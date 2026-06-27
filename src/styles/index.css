@@ -80,7 +80,12 @@ body.dark-mode .sidebar a:hover { color: #e17acb; }
 }
 
 .hero-section .text h1 { font-size: 36px; padding-bottom: 10px; }
+/* The original markup used a non-standard <p1> tag. Browsers render unknown
+   elements as inline, so its `margin-top: 50px` was ignored. We render a real
+   <p class="subtitle"> (block by default), so we force `display: inline` to
+   reproduce the exact original spacing — otherwise the subtitle drops 50px. */
 .hero-section .text .subtitle {
+    display: inline;
     margin-top: 50px;
     padding: 5px 0;
     font-size: 14px;
