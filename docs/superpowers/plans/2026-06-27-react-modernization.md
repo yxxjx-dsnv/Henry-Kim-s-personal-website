@@ -95,6 +95,9 @@ node_modules/
 dist/
 .DS_Store
 *.local
+
+# Obsidian project vault (personal notes; backed up via OneDrive)
+Henry's portfolio/
 ```
 
 - [ ] **Step 4: Verify the tree and assets**
