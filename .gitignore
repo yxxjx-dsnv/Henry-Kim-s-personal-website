@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# Obsidian project vault (personal notes; backed up via OneDrive)
+Henry's portfolio/
+
+# bkit plugin per-project state (tool state, not site source)
+.bkit/
